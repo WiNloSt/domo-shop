@@ -6,7 +6,7 @@ const Index = props => (
   <Layout>
     <CenterContainer>
       <ButtonContainer>
-        <Link href="/guest">
+        <Link href="/bill">
           <Button big style={{ maxWidth: 180, width: '100%' }}>
             ทั่วไป
           </Button>
@@ -28,6 +28,7 @@ export default Index
 injectGlobal`
   html, body {
     font-size: 16px;
+    line-height: 1.6;
   }
 `
 
