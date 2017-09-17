@@ -27,8 +27,10 @@ export default Index
 
 injectGlobal`
   html, body {
+    font-family: Helvetica Nueu, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
+    color: rgba(0%, 0%, 0%, 0.7);
   }
 `
 
@@ -39,7 +41,6 @@ const CenterContainer = styled.div`
   align-items: center;
   justify-content: center;
   align-content: center;
-  color: rgba(0%, 0%, 0%, 0.7);
 `
 
 const ButtonContainer = styled.div`
