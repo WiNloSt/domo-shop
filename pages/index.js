@@ -1,23 +1,26 @@
 import styled, { injectGlobal } from 'emotion/react'
 import Link from 'next/link'
+import Layout from 'organisms/Layout'
 
 const Index = props => (
-  <CenterContainer>
-    <ButtonContainer>
-      <Link href="/guest">
-        <Button big style={{ maxWidth: 180, width: '100%' }}>
-          ทั่วไป
-        </Button>
-      </Link>
-    </ButtonContainer>
-    <ButtonContainer>
-      <Link href="/member">
-        <Button big style={{ maxWidth: 180, width: '100%' }}>
-          สมาชิก
-        </Button>
-      </Link>
-    </ButtonContainer>
-  </CenterContainer>
+  <Layout>
+    <CenterContainer>
+      <ButtonContainer>
+        <Link href="/guest">
+          <Button big style={{ maxWidth: 180, width: '100%' }}>
+            ทั่วไป
+          </Button>
+        </Link>
+      </ButtonContainer>
+      <ButtonContainer>
+        <Link href="/member">
+          <Button big style={{ maxWidth: 180, width: '100%' }}>
+            สมาชิก
+          </Button>
+        </Link>
+      </ButtonContainer>
+    </CenterContainer>
+  </Layout>
 )
 
 export default Index
