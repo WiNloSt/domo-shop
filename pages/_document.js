@@ -29,6 +29,11 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <title>ดื่มชา</title>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
           <style dangerouslySetInnerHTML={{ __html: style }} />
         </Head>
