@@ -25,13 +25,19 @@ const CenterContainer = styled.div`
   align-content: center;
 `
 
-const Nav = styled.nav`background: #52a9bc;`
+const Nav = styled.nav`
+  height: 3rem;
+  background: #52a9bc;
+  padding-left: 1rem;
+  padding-right: 1rem;
+`
 
 const LinkItem = styled.span`
-  display: inline-block;
-  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   cursor: pointer;
+  height: 100%;
 
   &:hover {
     color: hsla(191, 44%, 90%, 1);
