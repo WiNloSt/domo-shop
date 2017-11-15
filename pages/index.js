@@ -4,18 +4,16 @@ import Layout from 'organisms/Layout'
 
 const Index = props => (
   <Layout>
-    <CenterContainer>
-      <ButtonContainer>
-        <Link href="/bill">
-          <Button big>ทั่วไป</Button>
-        </Link>
-      </ButtonContainer>
-      <ButtonContainer>
-        <Link href="/member">
-          <Button big>สมาชิก</Button>
-        </Link>
-      </ButtonContainer>
-    </CenterContainer>
+    <ButtonContainer>
+      <Link href="/bill">
+        <Button big>ทั่วไป</Button>
+      </Link>
+    </ButtonContainer>
+    <ButtonContainer>
+      <Link href="/member">
+        <Button big>สมาชิก</Button>
+      </Link>
+    </ButtonContainer>
   </Layout>
 )
 
@@ -28,15 +26,6 @@ injectGlobal`
     line-height: 1.6;
     color: rgba(0%, 0%, 0%, 0.7);
   }
-`
-
-const CenterContainer = styled.div`
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
 `
 
 const ButtonContainer = styled.div`
