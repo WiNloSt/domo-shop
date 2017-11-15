@@ -16,8 +16,10 @@ const Layout = props => (
 
 export default Layout
 
+const NAV_HEIGHT = 3
+
 const CenterContainer = styled.div`
-  height: 100vh;
+  height: calc(100vh - ${NAV_HEIGHT}rem);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -26,7 +28,7 @@ const CenterContainer = styled.div`
 `
 
 const Nav = styled.nav`
-  height: 3rem;
+  height: ${NAV_HEIGHT}rem;
   background: #52a9bc;
   padding-left: 1rem;
   padding-right: 1rem;
