@@ -7,16 +7,12 @@ const Index = props => (
     <CenterContainer>
       <ButtonContainer>
         <Link href="/bill">
-          <Button big style={{ maxWidth: 180, width: '100%' }}>
-            ทั่วไป
-          </Button>
+          <Button big>ทั่วไป</Button>
         </Link>
       </ButtonContainer>
       <ButtonContainer>
         <Link href="/member">
-          <Button big style={{ maxWidth: 180, width: '100%' }}>
-            สมาชิก
-          </Button>
+          <Button big>สมาชิก</Button>
         </Link>
       </ButtonContainer>
     </CenterContainer>
@@ -71,6 +67,8 @@ const Button = styled.button`
   outline: none;
   color: rgba(0%, 0%, 0%, 0.7);
   font-size: ${props => (props.big ? '2em' : '1em')};
+  max-width: 180px;
+  width: 100%;
 
   &:hover {
     background: #b1d6de;
