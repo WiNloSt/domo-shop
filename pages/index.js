@@ -6,12 +6,7 @@ const Index = props => (
   <Layout>
     <ButtonContainer>
       <Link href="/bill">
-        <Button big>ทั่วไป</Button>
-      </Link>
-    </ButtonContainer>
-    <ButtonContainer>
-      <Link href="/member">
-        <Button big>สมาชิก</Button>
+        <Button big>Bill</Button>
       </Link>
     </ButtonContainer>
   </Layout>
