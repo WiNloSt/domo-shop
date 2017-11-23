@@ -55,6 +55,7 @@ const Button = styled.button`
   font-size: ${props => (props.big ? '2em' : '1em')};
   max-width: 180px;
   width: 100%;
+  transform: translateY(0px);
 
   &:hover {
     background: #b1d6de;
