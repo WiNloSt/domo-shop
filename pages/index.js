@@ -57,6 +57,10 @@ const Button = styled.button`
   width: 100%;
   transform: translateY(0px);
 
+  &:focus {
+    outline: none;
+  }
+
   &:hover {
     background: #b1d6de;
     transform: translateY(-1px);
