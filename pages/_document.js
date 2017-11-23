@@ -1,6 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import { extractCritical } from 'emotion-server'
-import { flush } from 'emotion'
+import { flush } from 'react-emotion'
 
 import style from '../styles/index.css'
 
@@ -30,10 +30,7 @@ export default class MyDocument extends Document {
         <Head>
           <title>ดื่มชา</title>
           <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
           <style dangerouslySetInnerHTML={{ __html: style }} />
         </Head>

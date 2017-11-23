@@ -1,4 +1,4 @@
-import styled, { injectGlobal } from 'emotion/react'
+import styled, { injectGlobal } from 'react-emotion'
 import Link from 'next/link'
 import Layout, { CenterContainer } from 'organisms/Layout'
 
