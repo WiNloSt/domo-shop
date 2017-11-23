@@ -8,7 +8,7 @@ const Layout = props => (
         <LinkItem>Home</LinkItem>
       </Link>
     </Nav>
-    <CenterContainer>{props.children}</CenterContainer>
+    {props.children}
 
     <Img src="/static/logo.png" />
   </div>
@@ -18,7 +18,7 @@ export default Layout
 
 const NAV_HEIGHT = 3
 
-const CenterContainer = styled.div`
+export const CenterContainer = styled.div`
   height: calc(100vh - ${NAV_HEIGHT}rem);
   display: flex;
   flex-wrap: wrap;

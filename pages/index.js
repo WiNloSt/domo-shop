@@ -1,14 +1,16 @@
 import styled, { injectGlobal } from 'emotion/react'
 import Link from 'next/link'
-import Layout from 'organisms/Layout'
+import Layout, { CenterContainer } from 'organisms/Layout'
 
 const Index = props => (
   <Layout>
-    <ButtonContainer>
-      <Link href="/bill">
-        <Button big>Bill</Button>
-      </Link>
-    </ButtonContainer>
+    <CenterContainer>
+      <ButtonContainer>
+        <Link href="/bill">
+          <Button big>Bill</Button>
+        </Link>
+      </ButtonContainer>
+    </CenterContainer>
   </Layout>
 )
 
