@@ -8,7 +8,7 @@ const Layout = props => (
         <LinkItem>Home</LinkItem>
       </Link>
     </Nav>
-    {props.children}
+    <Container>{props.children}</Container>
 
     <Img src="/static/logo.png" />
   </div>
@@ -44,6 +44,12 @@ const LinkItem = styled.span`
   &:hover {
     color: hsla(191, 44%, 90%, 1);
   }
+`
+
+const Container = styled.div`
+  max-width: 800px;
+  margin: 0 auto;
+  ${props => props.debug && 'border: 1px solid red'};
 `
 
 const Img = styled.img`
